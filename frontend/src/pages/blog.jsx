@@ -64,7 +64,7 @@ const Blog = () => {
 
     const readBlog = async () => {
         try {
-            const { data } = await axios.get(API_URL)
+            const { data } = await axios.get(`${API_URL}/blog`)
             console.log(data);
             setAllBlogs(data.result)
 
